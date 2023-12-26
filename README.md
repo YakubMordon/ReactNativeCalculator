@@ -14,5 +14,12 @@
   <li>React Native Chart Kit</li>
 </ul>
 <hr>
+<p>Platforms on which it can be runned:</p>
+<ul>
+  <li>Android</li>
+  <li>iOS</li>
+  <li>Web Browser</li>
+</ul>
+<hr>
 <p>CLI: Expo CLI</p>
 <hr>
