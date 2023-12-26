@@ -46,7 +46,7 @@ const MonteCarlo = () => {
 
         dataset = [...dataset, (prev + uniqueNumbers[key]).toFixed(2), (prev + uniqueNumbers[key]).toFixed(2)]
 
-        stringBuilder = [...stringBuilder, [`${key}`, `${uniqueNumbers[key].toFixed(3)}`, `${(prev + uniqueNumbers[key]).toFixed(2)}`]];
+        stringBuilder = [...stringBuilder, [`${key + 1}`, `${uniqueNumbers[key].toFixed(3)}`, `${(prev + uniqueNumbers[key]).toFixed(2)}`]];
 
         if(interval >= prev && interval <= prev + uniqueNumbers[key]){
           finalString += key + ' ';
