@@ -10,6 +10,7 @@
 <p>Technologies used in project:</p>
 <ul>
   <li>React Native</li>
+  <li>React Native Web</li>
   <li>React Native Router</li>
   <li>React Native Chart Kit</li>
 </ul>
