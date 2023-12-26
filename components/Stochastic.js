@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, TextInput, ScrollView, Platform, StyleSheet, Text } from 'react-native';
+import { View, TextInput, ScrollView, StyleSheet, Text } from 'react-native';
 import ButtonPressable from './UI/ButtonPressable';
 import Header from './UI/Header';
 import Input from './UI/Input';
@@ -11,7 +11,6 @@ const Stochastic = () => {
   const [results, setResults] = useState([]);
 
   const rowPlaceholders = ['перший', 'другий', 'третій', 'четвертий', "п'ятий"];
-  const keyboardType = Platform.OS === 'android' ? "numeric" : "default";
 
   const handleInputChange = (inputName, text) => {
     setMatrix((prevValues) => ({
@@ -79,7 +78,6 @@ const Stochastic = () => {
           <TextInput
             key={`row${index + 1}`}
             value={matrix[`row${index + 1}`]}
-            keyboardType={keyboardType}
             onChangeText={(text) => handleInputChange(`row${index + 1}`, text)}
             style={styles.input}
             placeholder={`Введіть ${placeholder} рядок з матриці`}
