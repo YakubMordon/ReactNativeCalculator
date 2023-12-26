@@ -1,9 +1,11 @@
-import { TextInput, StyleSheet } from 'react-native';
+import { TextInput, StyleSheet, Platform } from 'react-native';
 
 const Input = ({value, setter, text}) => {
+    const keyboardType = Platform.OS === 'android' ? "numeric" : "default";
+
     return (
         <TextInput 
-            keyboardType="numeric" 
+            keyboardType={keyboardType}
             value={value} 
             onChangeText={(text) => setter(text)} 
             style={styles.input} 
