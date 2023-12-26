@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import { View, TextInput, ScrollView, StyleSheet, Text } from 'react-native';
 import ButtonPressable from './UI/ButtonPressable';
+import Header from './UI/Header';
 import Input from './UI/Input';
 
 const Stochastic = () => {
@@ -71,6 +72,8 @@ const Stochastic = () => {
   return (
     <View>
       <ScrollView contentContainerStyle={styles.mainContainer}>
+        <Header text={"Переходи станів за тактами"}/>
+
         {rowPlaceholders.map((placeholder, index) => (
           <TextInput
             key={`row${index + 1}`}

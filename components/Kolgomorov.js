@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, Text, TextInput, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import ButtonPressable from './UI/ButtonPressable';
 import ScrollWithHeader from './UI/ScrollWithHeader';
 import Input from './UI/Input';
