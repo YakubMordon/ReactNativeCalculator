@@ -40,13 +40,13 @@ const MonteCarlo = () => {
 
       let dataset = [0, 0, 0]
 
-      Object.keys(uniqueNumbers).forEach(key => {
+      Object.keys(uniqueNumbers).forEach((key) => {
 
         labels = [...labels, key]
 
         dataset = [...dataset, (prev + uniqueNumbers[key]).toFixed(2), (prev + uniqueNumbers[key]).toFixed(2)]
 
-        stringBuilder = [...stringBuilder, [`${key + 1}`, `${uniqueNumbers[key].toFixed(3)}`, `${(prev + uniqueNumbers[key]).toFixed(2)}`]];
+        stringBuilder = [...stringBuilder, [`${key}`, `${uniqueNumbers[key].toFixed(3)}`, `${(prev + uniqueNumbers[key]).toFixed(2)}`]];
 
         if(interval >= prev && interval <= prev + uniqueNumbers[key]){
           finalString += key + ' ';
@@ -144,8 +144,7 @@ const MonteCarlo = () => {
 const styles = StyleSheet.create({
   mainContainer:{
     gap: 20, 
-    marginTop: 60, 
-    justifyContent: 'center', 
+    marginTop: 25, 
     flexDirection: 'column', 
     alignItems: 'center'
   },

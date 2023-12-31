@@ -111,7 +111,6 @@ const styles = StyleSheet.create({
   mainContainer:{
     gap: 20, 
     marginTop: 25, 
-    justifyContent: 'center', 
     flexDirection: 'column', 
     alignItems: 'center'
   },
