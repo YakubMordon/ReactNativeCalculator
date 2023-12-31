@@ -16,6 +16,10 @@ const Navbar = () => {
         <Link to="/montecarlo" underlayColor="#f0f4f7">
             <Text style={styles.textColor}>MonteCarlo</Text>
         </Link>
+        <Text style={styles.textColor}>|</Text>
+        <Link to="/questions" underlayColor="#f0f4f7">
+            <Text style={styles.textColor}>Questions</Text>
+        </Link>
       </View>
 
       <Outlet />
