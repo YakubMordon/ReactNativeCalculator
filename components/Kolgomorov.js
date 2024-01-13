@@ -71,7 +71,7 @@ const Kolgomorov = () => {
                       </View>
                       <View>
                         <Text style={styles.tableText}>Отже, найбільша різниця {result.diff}</Text>
-                        <Text style={styles.tableText}>Критерій Колгоморова-Смірнова: k = {result.diff}√{result.arr.length} = {(result.diff * Math.sqrt(result.arr.length)).toFixed(3)}</Text>
+                        <Text style={styles.tableText}>Критерій Колгоморова-Смірнова: k = {result.diff}√{result.arr.length} = {((result.diff * Math.sqrt(result.arr.length))/result.arr.length).toFixed(3)}</Text>
                       </View>
                   </ScrollView>
               </View>
